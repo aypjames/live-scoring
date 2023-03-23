@@ -2,6 +2,8 @@
 
 This is a simple live-scoring app created for the World Sports Action (WSA) Football World Cup. The application was built using React JavaScript and implements a mobile-first design. The app applies the BEM methodology for Sass styling and makes reference to the mockups on the WSA website.
 
+[View deployed App](https://live-scoring.vercel.app)
+
 ![demo app screenshots](./src/READMEImgs/app_screenshot.png)
 ![reference mockups from WSA website](./src/READMEImgs/reference_imgs.png)
 
