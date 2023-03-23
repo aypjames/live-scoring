@@ -29,9 +29,11 @@
       display: flex;
       column-gap: 20px;
       align-items: center;
+      color: black;
       background-color: var(--bg-color-white);
       animation: fadeInAnimation ease 1s;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      font-size: 14px;
 
       @include devices.laptop {
         padding: 20px 25px;
