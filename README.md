@@ -5,11 +5,7 @@ This is a simple live-scoring app created for the World Sports Action (WSA) Foot
 ![demo app screenshots](./src/READMEImgs/app_screenshot.png)
 ![reference mockups from WSA website](./src/READMEImgs/reference_imgs.png)
 
-<img src="./src/READMEImgs/app_screenshot.png" width="45%" height="45%">
-
-<img src="./src/READMEImgs/reference_imgs.png" width="45%" height="45%">
-
-Screenshots from my demo app (above) vs reference mockups from WSA website (below)
+_Screenshots from my demo app (above) vs reference mockups from WSA website (below)_
 
 ## MVP
 
