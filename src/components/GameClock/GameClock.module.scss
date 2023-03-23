@@ -1,0 +1,9 @@
+.GameClock {
+  &_timer {
+    color: var(--text-orange);
+  }
+
+  &_stage {
+    color: var(--text-grey);
+  }
+}

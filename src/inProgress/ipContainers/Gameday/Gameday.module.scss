@@ -1,0 +1,57 @@
+.Gameday {
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-orange-start),
+      var(--gradient-orange-end)
+    );
+    color: var(--text-white);
+    padding: 1rem 1rem;
+
+    &_nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_title {
+      & h3 {
+        margin: 0;
+      }
+    }
+  }
+
+  &_body {
+    padding: 2rem 0;
+    background-color: var(--bg-color-white);
+
+    &_top {
+      display: flex;
+      justify-content: space-around;
+
+      &_timer {
+        & h4 {
+          margin: 0;
+          color: var(--text-orange);
+        }
+      }
+
+      &_actions {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+
+    &_para {
+      background-color: var(--bg-color-white);
+      padding: 0.1rem;
+      border-radius: 0.5rem;
+      transition-property: opacity;
+      transition: all 3s;
+    }
+  }
+}

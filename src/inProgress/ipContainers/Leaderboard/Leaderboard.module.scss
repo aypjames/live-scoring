@@ -1,0 +1,25 @@
+.Leaderboard {
+  &_table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-color-white);
+
+    & tr:first-child {
+      background-color: var(--bg-color-grey);
+    }
+
+    & tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    & td,
+    th {
+      padding: 10px;
+    }
+  }
+}
+
+.textAlignCenter {
+  text-align: left;
+}

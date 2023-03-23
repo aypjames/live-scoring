@@ -1,0 +1,154 @@
+@use "../../devices";
+
+.TeamsLadder {
+  background-color: var(--bg-color-grey);
+  margin-bottom: 15px;
+
+  &_header {
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-orange-start),
+      var(--gradient-orange-end)
+    );
+    color: var(--text-white);
+    padding: 30px;
+  }
+
+  &_body {
+    margin: 15px 0;
+    &_sponsor {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      align-items: center;
+
+      &_text {
+        color: var(--text-grey);
+        display: flex;
+        width: 340px;
+
+        @include devices.laptop {
+          width: 435px;
+        }
+      }
+
+      &_image {
+        width: 340px;
+        height: 70px;
+        object-fit: contain;
+        border-radius: 10px;
+
+        @include devices.laptop {
+          width: 435px;
+        }
+
+        & img {
+          width: 340px;
+          height: 70px;
+          object-fit: cover;
+          border-radius: 10px;
+
+          @include devices.laptop {
+            width: 435px;
+          }
+        }
+      }
+    }
+
+    &_ladder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      margin-top: 30px;
+
+      &_header {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+        width: 300px;
+
+        @include devices.laptop {
+          width: 400px;
+        }
+
+        &_names {
+          text-align: left;
+          width: 230px;
+
+          @include devices.laptop {
+            width: 360px;
+          }
+        }
+
+        &_scores {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 21px;
+          width: 145px;
+        }
+      }
+
+      &_rows {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--bg-color-white);
+        padding: 15px 20px;
+        width: 300px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        @include devices.laptop {
+          width: 400px;
+        }
+
+        &_names {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 20px;
+          width: 230px;
+
+          & img {
+            width: 30px;
+            height: 30px;
+          }
+
+          @include devices.laptop {
+            width: 330px;
+          }
+        }
+
+        &_scores {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 7px;
+
+          & h4 {
+            width: 25px;
+          }
+
+          & p {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+  &_btn_primary {
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-orange-start),
+      var(--gradient-orange-end)
+    );
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 300px;
+    padding: 15px;
+  }
+}

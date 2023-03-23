@@ -1,0 +1,171 @@
+@use "../../devices";
+
+.GameScoring {
+  &_nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 280px;
+    color: white;
+    cursor: pointer;
+
+    @include devices.laptop {
+      column-gap: 780px;
+    }
+  }
+
+  &_header {
+    background-image: linear-gradient(
+      to bottom,
+      var(--gradient-orange-start),
+      var(--gradient-orange-end)
+    );
+    color: var(--text-white);
+    padding: 30px;
+  }
+
+  &_tournieImg {
+    background-image: linear-gradient(
+      169deg,
+      var(--gradient-orange-end) 50%,
+      white 50%
+    );
+
+    @include devices.laptop {
+      background-image: linear-gradient(
+        176deg,
+        var(--gradient-orange-end) 50%,
+        white 50%
+      );
+    }
+
+    & img {
+      border-radius: 50%;
+      width: 25%;
+      height: 25%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      @include devices.laptop {
+        width: 8%;
+        height: 8%;
+      }
+    }
+  }
+
+  &_pointsSystem {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding-bottom: 15px;
+
+    &_rowOne {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      padding: 10px 0;
+
+      &_clock {
+        width: 90px;
+      }
+    }
+
+    &_rowTwo {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 145px;
+
+      &_content {
+        display: flex;
+        width: 97px;
+        flex-direction: column;
+        row-gap: 10px;
+        & h4 {
+          color: var(--text-grey);
+        }
+
+        &_btns {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 25px;
+
+          & button {
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 50px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .primaryBtn {
+    color: var(--text-orange);
+    border-color: var(--text-orange);
+  }
+
+  .secondaryBtn {
+    color: var(--text-grey);
+    border-color: var(--text-grey);
+  }
+
+  &_btn_primary {
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-orange-start),
+      var(--gradient-orange-end)
+    );
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 300px;
+    padding: 15px;
+  }
+
+  &_btn_secondary {
+    background-color: var(--text-white);
+    color: var(--text-orange);
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid var(--text-orange);
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 300px;
+    padding: 15px;
+  }
+
+  &_gameMsgs {
+    margin: 15px 0;
+    background-color: var(--bg-color-grey);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    animation: fadeInAnimation ease 0.5s;
+
+    &_msg {
+      padding: 10px;
+      width: 320px;
+      background-color: var(--bg-color-white);
+      animation: fadeInAnimation ease 1s;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

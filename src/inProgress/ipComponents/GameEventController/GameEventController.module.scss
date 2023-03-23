@@ -1,0 +1,41 @@
+.GameEventController {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  // &_btns {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   row-gap: 1rem;
+  // }
+
+  &_btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid var(--bg-color-grey);
+    background-color: var(--bg-color-grey);
+    border-radius: 5px;
+    padding: 10px;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    & button {
+      padding: 10px;
+      background-color: var(--bg-color-white);
+      color: var(--text-orange);
+      border-radius: 5px;
+      border: 2px solid var(--text-orange);
+    }
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &_btns::-webkit-scrollbar {
+    display: none;
+  }
+}
