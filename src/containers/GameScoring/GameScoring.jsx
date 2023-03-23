@@ -127,6 +127,13 @@ const GameScoring = ({
     setShowGameSelect(true);
   };
 
+  // Providing instruction on what to end.
+  const handleHelpClick = () => {
+    alert(
+      "Instructions:\n 1. Start the clock.\n 2. Add (+) and remove (-) scores for each team.\n 3. Iterate through game phases by starting and stopping the clock.\n 4. Click 'View Ladder' to submit and view the game outcomes."
+    );
+  };
+
   return (
     <>
       {teamA && teamB && (
@@ -139,7 +146,12 @@ const GameScoring = ({
               >
                 arrow_back_ios
               </span>
-              <span className="material-symbols-outlined">settings</span>
+              <span
+                className="material-symbols-outlined"
+                onClick={handleHelpClick}
+              >
+                help
+              </span>
             </div>
             <h2>Live Score</h2>
             <p>WSA WORLD CUP</p>

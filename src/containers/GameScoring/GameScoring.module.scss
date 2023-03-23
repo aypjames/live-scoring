@@ -8,6 +8,10 @@
     color: white;
     cursor: pointer;
 
+    & span {
+      font-size: 30px;
+    }
+
     @include devices.laptop {
       column-gap: 780px;
     }
@@ -95,7 +99,7 @@
 
           & button {
             padding: 5px;
-            border: 1px solid white;
+            border: 2px solid white;
             border-radius: 50px;
             background-color: transparent;
           }
